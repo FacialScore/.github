@@ -138,7 +138,7 @@ $$g_{SO(3)}(R)[U, V] = \mathrm{tr}(U^\top V), \quad U, V \in T_R SO(3)$$
 
 Riemannian gradient:
 
-$$\operatorname{grad}_{SO(3)} f(R) = g^{-1}(R) \cdot df(R)$$
+$$\mathrm{grad}_{SO(3)} f(R) = g^{-1}(R) \cdot df(R)$$
 
 Update hợp lệ trên $SO(3)$ dùng Exponential Map:
 
@@ -172,11 +172,11 @@ trong đó $\Gamma_t = \mathcal{P}(\gamma_{0 \to t})$ là parallel transport ope
 
 **Điều kiện 1 — Submersion:**
 
-$$\operatorname{rank}(d\varphi_z) = \dim(\mathcal{M}_i) \quad \forall z$$
+$$\mathrm{rank}(d\varphi_z) = \dim(\mathcal{M}_i) \quad \forall z$$
 
 **Điều kiện 2 — Transversality:**
 
-$$\operatorname{codim}\!\left(\bigcap_i \mathcal{M}_i\right) = \sum_i \operatorname{codim}(\mathcal{M}_i)$$
+$$\mathrm{codim}\!\left(\bigcap_i \mathcal{M}_i\right) = \sum_i \mathrm{codim}(\mathcal{M}_i)$$
 
 **Điều kiện 3 — Bounded Holonomy:**
 
@@ -411,7 +411,7 @@ $$
 | Output $\in \mathfrak{so}(3)$ | Lie Head $[\cdot]_\times$ — baked in, không cần constraint   |
 | $\omega(v_H) = 0$             | Vertical Projector $\mathcal{P}_V$ trước khi vào network     |
 | Equivariance với $G$          | Spherical Harmonics kernel trên $SO(3)$                      |
-| Differentiable hoàn toàn      | Jacobian qua $[\cdot]_\times$ là $\epsilon_{ijk}$ — constant |
+| Differentiable hoàn toàn      | Jacobian qua $[\cdot ]_{ \times }$ là $\epsilon_{ijk}$ — constant |
 | Không overfit geometry        | Curvature regularization $\mathcal{L}_{\text{curv}}$         |
 
 ---
