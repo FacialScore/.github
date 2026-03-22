@@ -276,7 +276,7 @@ $$v_V = \mathcal{P}_V \cdot v, \qquad v_H = (\mathrm{Id} - \mathcal{P}_V) \cdot 
 
 Với $SO(3)$, Lie algebra $\mathfrak{so}(3)$ là tập các **skew-symmetric matrices** $3\times 3$:
 
-$$\mathfrak{so}(3) = \left\{ \Omega \in \mathbb{R}^{3\times 3} \mid \Omega^\top = -\Omega \right\}$$
+$$\mathfrak{so}(3) = \{ \Omega \in \mathbb{R}^{3\times 3} \mid \Omega^\top = -\Omega \}$$
 
 Mọi $\Omega \in \mathfrak{so}(3)$ có thể viết:
 
@@ -411,7 +411,7 @@ $$
 | Output $\in \mathfrak{so}(3)$ | Lie Head $[\cdot]_\times$ — baked in, không cần constraint   |
 | $\omega(v_H) = 0$             | Vertical Projector $\mathcal{P}_V$ trước khi vào network     |
 | Equivariance với $G$          | Spherical Harmonics kernel trên $SO(3)$                      |
-| Differentiable hoàn toàn      | Jacobian qua $[\cdot ]_{ \times }$ là $\epsilon_{ijk}$ — constant |
+| Differentiable hoàn toàn      | Jacobian qua $[\cdot]_\times$ là $\epsilon_{ijk}$ — constant |
 | Không overfit geometry        | Curvature regularization $\mathcal{L}_{\text{curv}}$         |
 
 ---
